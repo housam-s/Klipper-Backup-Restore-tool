@@ -32,7 +32,8 @@ git push -u origin master
 1. Open WinSCP and connect to your printer
 2. Download the backup.sh file 
 3. Copy the “backup.sh” file, updated with the correct credentials, into the pi folder. `/home/pi`
-4. Copy the “gcode_shell_command.py”: file into the extras folder. `/klipper/klippy/extras`
+4. Copy the “gcode_shell_command.py”: file into the extras folder. `/klipper/klippy/extras` Download file from here 
+
 5. Add the following to a macro or printer.cfg file
 
 ```
