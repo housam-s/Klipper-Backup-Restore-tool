@@ -10,7 +10,7 @@ Assuming you already have a Github account
 
 1. Create a new GitHub repository
 2. Create a token for access to the repo (Settings--Developer--Personal Access Tokens)
-3. SSH To the printer and run the commands below. (replace the values with your actual USERNAME, EMAIL, TOKEN AND REPOSITORY)
+3. SSH To the printer and run the commands below. Replace the values with your actual ```USERNAME, EMAIL, TOKEN AND REPOSITORY```
 
 ## Setting up Git
 
