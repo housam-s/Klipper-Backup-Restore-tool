@@ -10,16 +10,16 @@ Assuming you already have a Github account
 
 1. Create a new GitHub repository
 2. Create a token for access to the repo (Settings--Developer--Personal Access Tokens)
-3. SSH To the printer and run the commands below. (replace the values between [ ])
+3. SSH To the printer and run the commands below. (replace the values with your actual USERNAME, EMAIL, TOKEN AND REPOSITORY)
 
 ## Setting up Git
 
 ``` sudo apt-get install git -y
 cd ~/klipper_config/
 git init
-git config --global user.name "[USERNAME]"
-git config --global user.email "[EMAIL]"
-git remote add origin https://[USERNAME]:[TOKEN]@[REPOSITORY URL]
+git config --global user.name "USERNAME"
+git config --global user.email "EMAIL"
+git remote add origin https://USERNAME:TOKEN@REPOSITORY URL
 git add .  (Note the ".", this is important)
 git commit -m "Initial backup" 
 git push -u origin master 
@@ -32,8 +32,9 @@ git push -u origin master
 1. Open WinSCP and connect to your printer
 
    Download the backup.sh file [here](https://github.com/housam-s/Klipper-Backup/blob/main/backup.sh/)
+   You may have to check/change your klipper config path in this file on line 8. By default it is /home/pi/klipper_config. Newer klipper installations now use /home/pi/printer_data/config
    
-2. Copy the “backup.sh” file, updated with the correct credentials, into the pi folder. `/home/pi`
+2. Copy the “backup.sh” file into the pi folder. `/home/pi`
 3. Copy the “gcode_shell_command.py”: file into the extras folder. `/klipper/klippy/extras`
 
    Download link is [here](https://github.com/th33xitus/kiauh/blob/150ef0142fae7b1b0ffc6e27149dba0f3ac86ac7/resources/gcode_shell_command.py/).
