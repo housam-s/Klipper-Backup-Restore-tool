@@ -15,7 +15,7 @@ Assuming you already have a Github account
 ## Setting up Git
 
 ``` sudo apt-get install git -y
-cd ~/klipper_config/
+cd ~/printer_data/config
 git init
 git config --global user.name "USERNAME"
 git config --global user.email "EMAIL"
