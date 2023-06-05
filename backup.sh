@@ -5,7 +5,9 @@
 ### the listed folders, just keep that line commented out.        ###
 #####################################################################
 ### Path to your config folder you want to backup
-config_folder=/home/pi/klipper_config
+#this has been recently updated to /home/pi/printer_data/config 
+#please check your config folder path and update it below
+config_folder=/home/pi/printer_data/config
 #
 ### Path to your Klipper folder, by default that is '~/klipper'
 klipper_folder=/home/pi/klipper
