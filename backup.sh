@@ -8,17 +8,19 @@
 addshellcommand(){ 
   cd ~/klipper/klippy/extras/
   wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup/main/gcode_shell_command.py
-  echo gcode_shell_command.py is now present
+  echo gcode_shell_command.py has now been added to Klippy Extras
+  sleep 1
 }
 
 #Download backup macro and add it to ~/printer_data/config/printer.cfg
 addmacro(){  
   sed -i '1 i\[include backup.cfg]\n' ~/printer_data/config/printer.cfg
-  echo backup.cfg has been included in printer.cfg
+  sleep 1
   cd ~/printer_data/config/
   wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup/main/backup.cfg
   sed -i 's|replaceme|/home/'$USER'/backup.sh |g' ~/printer_data/config/backup.cfg
-  echo backup.cfg is now present
+  echo backup.cfg has been downloaded and included in printer.cfg
+  sleep 1
 }
 
 #Setup Git connectivity in ~/printer_data/config
@@ -45,7 +47,7 @@ getgit(){
   git commit -m "Initial backup"
   git push -u origin master
   sleep 1
-  echo Setup Completed
+  echo Setup has been completed
   exit
 }
 
@@ -67,17 +69,20 @@ push_config(){
 run(){
   shellcommandpath=~/klipper/klippy/extras/gcode_shell_command.py
   if [ ! -f "$shellcommandpath" ]; then
-    echo gcode_shell_command.py is not present
+    echo gcode_shell_command.py is not in Klippy Extras
+    sleep 1
     addshellcommand
   fi
   macropath=~/printer_data/config/backup.cfg
   if [ ! -f "$macropath" ]; then
-    echo Macro not installed
+    echo backup.cfg has not been downloaded
+    sleep 1
     addmacro
   fi
   gitpath=~/printer_data/config/.git
   if [ ! -d "$gitpath" ]; then
-    echo Git not configured
+    echo Git has not been configured yet
+    sleep 1
     getgit
   fi
   sleep 1
