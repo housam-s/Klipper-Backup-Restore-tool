@@ -1,6 +1,13 @@
 # Klipper Github Backup & Restore Tool
 Backup and restore your Klipper config to github
 
+This tool gives you the ability to backup your existing klipper config or restore your existing config onto a fresh build of klipper. 
+It is assumed that you have klipper installed before using this tool. 
+
+There are two options to select from. 
+1) Backup
+2) Restore
+
 ## Instructions
 
 Assuming you already have a Github account 
@@ -17,18 +24,18 @@ Git is a dependency for this script to run please make sure to install git if yo
 
 To get started with this script navigate to your home folder on your device and down the script 
 
-`wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup/main/backup.sh`
+`wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup-Restore-tool/main/menu.sh`
 
 Make the script executable 
 
-`chmod +x backup.sh`
+`chmod +x menu.sh`
 
-Now run the script for the first time `./backup.sh` and you will be prompted to input your Git Username, Email Address, Token and Repo URL.
+Now run the script for the first time `./menu.sh` and you will be prompted to input your Git Username, Email Address, Token and Repo URL.
 **It is very important for the Repository URL that you DO NOT include the https://**
 
-When you next run the script via `./backup.sh` or using the macro it will not prompt you for these details again.
+When you next run the script via `./menu.sh` or using the macro it will not prompt you for these details again.
 
 To finish the installation it is recommended to reboot the device you have installed the script on.
 
-#### You can choose to automate this backup process by calling the macro or the backup.sh script. This can be setup to run as a cron or even at the start/end of a print. I will leave this up to you. 
+#### You can choose to automate this backup process by calling the macro or the menu.sh script. This can be setup to run as a cron or even at the start/end of a print. I will leave this up to you. 
 
