@@ -1,6 +1,6 @@
 #!/bin/bash
 ###########################
-## Klipper Backup Script ##
+## Klipper Backup & Restore Script ##
 #### Created by m00se #####
 ###########################
 
