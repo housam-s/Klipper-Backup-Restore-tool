@@ -1,5 +1,5 @@
-# Klipper Github Backup
-Backup your Klipper config to github
+# Klipper Github Backup & Restore Tool
+Backup and restore your Klipper config to github
 
 ## Instructions
 
