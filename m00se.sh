@@ -61,7 +61,7 @@ gitnew(){
 #Download gcode_shell_command.py and place it in~/klipper/klippy/extras/
 addshellcommand(){ 
   cd ~/klipper/klippy/extras/
-  wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup/main/gcode_shell_command.py
+  wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup-Restore-tool/main/gcode_shell_command.py
   sleep 1
 }
 
@@ -70,7 +70,7 @@ addshellcommand(){
 #Download backup.cfg and add it to ~/printer_data/config/
 addbackupcfg(){
   cd ~/printer_data/config/
-  wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup/main/backup.cfg
+  wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup-Restore-tool/main/backup.cfg
   printf "\n[Backup Config File]\n"
   echo backup.cfg has been downloaded and placed in ~/printer_data/config/
   sleep 1
@@ -82,7 +82,7 @@ addbackupcfg(){
 #Download restore.cfg and add it to ~/printer_data/config/
 addrestorecfg(){
   cd ~/printer_data/config/
-  wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup/main/restore.cfg
+  wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup-Restore-tool/main/restore.cfg
   printf "\n[Restore Config File]\n"
   echo restore.cfg has been downloaded and placed in ~/printer_data/config/
   sleep 1
@@ -108,7 +108,7 @@ addrestoremacro(){
 addbackupcommand(){
     cd /home/$USER/
     if [ ! -f "backup_command.sh" ]; then
-      wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup/main/backup_command.sh
+      wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup-Restore-tool/main/backup_command.sh
       
     fi
 }
@@ -122,7 +122,7 @@ backupcommand(){
 addrestorecommand(){
     cd /home/$USER/
     if [ ! -f "restore_command.sh" ]; then
-      wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup/main/restore_command.sh
+      wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup-Restore-tool/main/restore_command.sh
     fi
 }
 
@@ -198,7 +198,7 @@ addrestorecommand(){
     cd /home/$USER/
     if [ ! -f "restore_command.sh" ]; then
       echo restore_command.sh does not exist, downloading file....
-      wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup/main/restore_command.sh
+      wget -q https://raw.githubusercontent.com/housam-s/Klipper-Backup-Restore-tool/main/restore_command.sh
     fi
 }
 
