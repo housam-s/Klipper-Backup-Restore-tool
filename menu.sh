@@ -22,7 +22,9 @@ gitinit(){
   sleep 1
 
   echo What is your Git Repository URL
-  read vargitrepo
+  read gitrepo
+  #Remove HTTPS/HTTP
+  valgitrepo=("${gitrepo##*//}")
 
   printf "\nYou have provided the following Git details:"
   printf "\nGit Username: $vargitusername"
